@@ -45,6 +45,12 @@
         </div>
     @endif
 
+    @if (!empty($success))
+        <div class="bg-green-500 text-white text-center p-3 rounded-lg">
+            <p>{{ $success }}!</p>
+        </div>
+    @endif
+
     {{-- CONTENT --}}
 
     {{-- First Section --}}

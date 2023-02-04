@@ -120,7 +120,7 @@ class AdminController extends Controller
     }
 
     public function pengadaan() {
-        $buku = Buku::orderBy('stok', 'asc')->first();
+        $buku = Buku::orderBy('stok', 'asc')->get();
 
         return view('pengadaan', compact('buku'));
     }

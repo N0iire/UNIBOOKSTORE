@@ -53,7 +53,7 @@
                 </div>
                 <div class="mb-4">
                     <label class="block text-gray-700 font-medium mb-2" for="nama">Nama</label>
-                    <input class="w-full border border-gray-400 p-2 rounded-lg" type="text" value="{{ $penerbit->nama_penerbit }}" id="nama" name="nama"
+                    <input class="w-full border border-gray-400 p-2 rounded-lg" type="text" value="{{ $penerbit->nama_penerbit }}" id="nama" name="nama_penerbit"
                         required>
                 </div>
                 <div class="mb-4">
@@ -69,7 +69,7 @@
                 <div class="mb-4">
                     <label class="block text-gray-700 font-medium mb-2" for="telpon">No Telepon</label>
                     <input class="w-full border border-gray-400 p-2 rounded-lg" value="{{ $penerbit->no_telp }}" type="text" id="telpon"
-                        name="telpon" required>
+                        name="no_telp" required>
                 </div>
                 <div class="flex items-center justify-center">
                     <button class="bg-blue-500 text-white p-2 rounded-lg hover:bg-blue-600" type="submit">

@@ -49,10 +49,12 @@
                 </tr>
             </thead>
             <tbody>
+                @foreach($buku as $item)
                 <tr class="text-gray-700">
-                    <td class="py-4 px-6 border-b">{{ $buku->nama_buku }}</td>
-                    <td class="py-4 px-6 border-b">{{ $buku->penerbit->nama_penerbit }}</td>
+                    <td class="py-4 px-6 border-b">{{ $item->nama_buku }}</td>
+                    <td class="py-4 px-6 border-b">{{ $item->penerbit->nama_penerbit }}</td>
                 </tr>
+                @endforeach
             </tbody>
         </table>
     </div>
