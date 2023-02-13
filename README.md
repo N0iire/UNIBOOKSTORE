@@ -1,3 +1,55 @@
+# ABOUT THIS PROJECT
+### This project is using Laravel & Tailwind css
+
+# Requirement
+- PHP 9
+
+
+# How to Install
+1. After clone this project, go to the cloned directory. _(example) : `C:\UNIBOOKSTORE`_
+2. Open your command line `composer install`
+
+3. Copy the `.env.example` file and rename it to `.env`
+4. Open `.env` file and change the following code from
+
+```
+   DB_CONNECTION=mysql
+   DB_HOST=127.0.0.1
+   DB_PORT=3306
+   DB_DATABASE=forumly
+   DB_USERNAME=root
+   DB_PASSWORD=';
+   
+```
+
+to
+
+```
+   DB_CONNECTION=mysql
+   DB_HOST=127.0.0.1
+   DB_PORT=3306
+   DB_DATABASE= YOUR_DATABASE_NAME
+   DB_USERNAME=root
+   DB_PASSWORD=';
+   
+```
+
+
+
+5. At command line, `php artisan key:generate`
+6. Import table to database, `php artisan migrate:fresh --seed`
+7. Install tailwind css dependencies, `npm install`
+8. To start laravel server, `php artisan serve` and to start tailwind, `npm run dev`
+
+# Important
+In my case, i starting two terminal at same directory. In this case is "UNIBOOKSTORE".
+One is for laravel server and another is for tailwind.
+If you have another method, please don't use my method above.
+
+## Feel free to use this project for any use. Cheers!
+
+
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
 <p align="center">
